@@ -54,9 +54,10 @@ class OnBoardingFragment : Fragment(), OnBoardingView {
     }
 
     private fun setupOnClickListener() {
-        connect_with_a_server_container.setOnClickListener { signInToYourServer() }
-        join_community_container.setOnClickListener { joinInTheCommunity() }
-        create_server_container.setOnClickListener { createANewServer() }
+//        connect_with_a_server_container.setOnClickListener { signInToYourServer() }
+//        join_community_container.setOnClickListener { joinInTheCommunity() }
+//        create_server_container.setOnClickListener { createANewServer() }
+        connect_with_a_server_container.setOnClickListener { joinInTheCommunity() }
     }
 
     override fun showLoading() {
@@ -91,7 +92,7 @@ class OnBoardingFragment : Fragment(), OnBoardingView {
 
     private fun joinInTheCommunity() = ui {
         presenter.connectToCommunityServer(
-            getString(R.string.default_protocol) + getString(R.string.community_server_url)
+            getString(R.string.default_protocol) + getString(R.string.pun_server_url)
         )
     }
 

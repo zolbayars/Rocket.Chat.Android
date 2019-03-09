@@ -25,7 +25,7 @@
             android:id="@+id/text_on_boarding_title"
             style="@style/Authentication.TextView.Headline"
             android:layout_marginTop="32dp"
-            android:text="@string/msg_welcome_to_rocket_chat"
+            android:text="@string/msg_welcome_to_pun"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_on_boarding" />
@@ -33,7 +33,7 @@
         <TextView
             android:id="@+id/text_on_boarding_description"
             style="@style/Authentication.TextView.Description"
-            android:text="@string/msg_team_communication"
+            android:text="@string/msg_welcome_to_pun_sub"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_on_boarding_title" />
@@ -67,7 +67,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toStartOf="@+id/image_connect_with_a_server_chevron"
                 android:layout_toEndOf="@+id/image_connect_with_a_server"
-                android:text="@string/action_connect_server" />
+                android:text="@string/msg_pun_enter" />
 
             <ImageView
                 android:id="@+id/image_connect_with_a_server_chevron"
@@ -85,9 +85,10 @@
             android:id="@+id/join_community_container"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_border"
             android:foreground="?selectableItemBackground"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/connect_with_a_server_container">
@@ -140,6 +141,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_color_accent"
             android:foreground="?selectableItemBackground"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/join_community_container">

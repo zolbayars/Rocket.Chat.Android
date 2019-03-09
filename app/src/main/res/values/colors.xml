@@ -37,7 +37,7 @@
     <color name="actionMenuColor">#FF727272</color>
     <color name="whitesmoke">#FFf1f1f1</color>
 
-    <color name="ic_launcher_background">@color/colorWhite</color>
+    <!--<color name="ic_launcher_background">@color/colorWhite</color>-->
 
     <color name="colorDrawableTintGrey">#9FA2A8</color>
 

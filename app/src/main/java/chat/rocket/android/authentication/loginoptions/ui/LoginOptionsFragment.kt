@@ -270,7 +270,8 @@ class LoginOptionsFragment : Fragment(), LoginOptionsView {
             addCustomOauthButton(
                 customOauthUrl.toString(),
                 state.toString(),
-                customOauthServiceName.toString(),
+                    "Login to the app",
+//                customOauthServiceName.toString(),
                 customOauthServiceTextColor,
                 customOauthServiceButtonColor
             )
@@ -408,14 +409,14 @@ class LoginOptionsFragment : Fragment(), LoginOptionsView {
     override fun showLoginWithEmailButton() {
         ui { _ ->
             button_login_with_email.setOnClickListener { presenter.toLoginWithEmail() }
-            button_login_with_email.isVisible = true
+            button_login_with_email.isVisible = false
         }
     }
 
     override fun showCreateNewAccountButton() {
         ui { _ ->
             button_create_an_account.setOnClickListener { presenter.toCreateAccount() }
-            button_create_an_account.isVisible = true
+            button_create_an_account.isVisible = false
         }
     }
 
